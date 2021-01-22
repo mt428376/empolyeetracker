@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS employee_DB;
+CREATE DATABASE employee_DB;
 **department**:
 
   * **id** - INT PRIMARY KEY
