@@ -1,4 +1,5 @@
 const mysql = require("mysql");
+const { title } = require("process");
 const inquirer = requirer("inquirer");
 
 const connection = mysql.createConnection({
@@ -6,7 +7,7 @@ const connection = mysql.createConnection({
 
   // Your username
   user: "root",
-​
+​          
   // Your password
   password: "Mickey19",
   database: "employee_DB",
@@ -38,7 +39,7 @@ function init () {
 function AddEmployees () {
     inquirer
     .prompt({
-      {
+      
         type:"list", 
         message: " What is the employee's first name?",
         name: "name",
@@ -78,7 +79,7 @@ function AddEmployees () {
 function UpdateEmployeeMManager () {
     inquirer
     .prompt({
-      {
+      
         type:"list", 
         message: " Which  employee's manager do you want to update?",
         name: "name",
@@ -100,4 +101,33 @@ function UpdateEmployeeMManager () {
 }
 
 
+function ViewAllEmployees () {
+    inquirer
+    .prompt({
+      
+        type:"list", 
+        message: " Which  employee's manager do you want to update?",
+        name: "name",
+      
+    },
+    )
+    }
 
+
+    function ViewAllRoles () {
+        inquirer
+        .prompt({
+           id: "1,2,3,4,5,6,7,8",
+           first_name:" John,Mike,Ashley,Kevin,Malia,Sarah,Tom ",
+            last_name:"Doe, Chan,Rodriguez,Tupik,Brown,Lourd,Allen",
+            title:"Sales Lead,Salesperson,Lead Engineer, Software Engineer,Accountant,Legal Team Lead, lawyer",
+            department: "sales, sales,engineering,engineering,finance,legal,legal",
+            salary:"100000,80000,150000,120000,125000,25000,190000",
+            manager:"Ashley Roderiguez, John Doe,null,Ashley Roderiguez,null,null,Sarah Lourd",
+        }
+        )
+    }
+      
+        
+        
+    

@@ -4,22 +4,17 @@
   "description": "Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node your-script.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mt428376/empolyeetracker.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mt428376/empolyeetracker/issues"
   },
-  "homepage": "https://github.com/mt428376/empolyeetracker#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "inquire": "^0.4.8",
-    "sql": "^0.78.0"
-  }
+  "homepage": "https://github.com/mt428376/empolyeetracker#readme"
 }
